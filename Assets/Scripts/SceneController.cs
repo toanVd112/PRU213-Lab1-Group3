@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
@@ -8,6 +8,8 @@ public class SceneController : MonoBehaviour
 
     public void PlayGame()
     {
+        // Reset data giữa các scene khi bắt đầu game mới
+        PlayerSpawnData.Reset();
         SceneManager.LoadScene("game");
     }
     public void ShowHuongDan()

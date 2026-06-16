@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 769136834917286073}
   - component: {fileID: 1920666726618156373}
   - component: {fileID: 6706367060523819612}
+  - component: {fileID: 5535906266279267268}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -211,6 +212,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5535906266279267268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4535906266279267268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a71ff092e396c4d8d18814baddf89b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  maxHealth: 3
+  gameOverSceneName: GameOverScene
+  invincibleDuration: 1.5
+  blinkRate: 0.1
 --- !u!1 &7045609705670244282
 GameObject:
   m_ObjectHideFlags: 0
