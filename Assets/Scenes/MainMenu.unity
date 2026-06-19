@@ -423,7 +423,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 150}
+  m_AnchoredPosition: {x: 50, y: 120}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &610784339
@@ -446,16 +446,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "H\u01AF\u1EDANG D\u1EAAN CH\u01A0I\n\n\n\n- Nh\u1EA5n Play \u0111\u1EC3
-    b\u1EAFt \u0111\u1EA7u game.\n\n- Di chuy\u1EC3n b\u1EB1ng c\xE1c n\xFAt m\u0169
-    t\xEAn tr\xEAn b\xE0n ph\xEDm \n\n- Khi di chuy\u1EC3n c\u1EA7n n\xE9 nh\u1EEFng
-    ch\u01B0\u1EDBng h\u1EA1i v\u1EADt b\u1EB1ng c\xE1c n\xFAt tr\xEAn\n\n- N\u1EBFu
-    nh\u01B0 \u0111\xE2m ph\u1EA3i nh\u1EEFng ch\u01B0\u1EDBng ng\u1EA1i v\u1EADt
-    c\xF3 s\xE1t th\u01B0\u01A1ng cao th\xEC nh\xE2n v\u1EADt s\u1EBD quay l\u1EA1i
-    \u0111i\u1EC3m xu\u1EA5t ph\xE1t \n\n- N\u1EBFu nh\u01B0 \u0111\xE3 v\u01B0\u1EE3t
-    qua h\u1EBFt c\xE1c ch\u01B0\u1EDBng ng\u1EA1i v\u1EADt tr\u01B0\u1EDBc th\u1EDDi
-    gian quy \u0111\u1ECBnh th\xEC xin ch\xFAc m\u1EEBng b\u1EA1n \u0111\xE3 d\xE0nh
-    chi\u1EBFn th\u1EAFng  "
+  m_text: "H\u01AF\u1EDANG D\u1EAAN CH\u01A0I\n\n- Nh\u1EA5n Play \u0111\u1EC3 b\u1EAFt
+    \u0111\u1EA7u game.\n\n- Di chuy\u1EC3n b\u1EB1ng c\xE1c n\xFAt m\u0169 t\xEAn
+    tr\xEAn b\xE0n ph\xEDm \n\n- Khi di chuy\u1EC3n c\u1EA7n n\xE9 nh\u1EEFng ch\u01B0\u1EDBng
+    h\u1EA1i v\u1EADt b\u1EB1ng c\xE1c n\xFAt tr\xEAn\n\n- N\u1EBFu nh\u01B0 \u0111\xE2m
+    ph\u1EA3i nh\u1EEFng ch\u01B0\u1EDBng ng\u1EA1i v\u1EADt c\xF3 s\xE1t th\u01B0\u01A1ng
+    cao th\xEC nh\xE2n v\u1EADt s\u1EBD quay l\u1EA1i \u0111i\u1EC3m xu\u1EA5t ph\xE1t
+    \n\n- N\u1EBFu nh\u01B0 \u0111\xE3 v\u01B0\u1EE3t qua h\u1EBFt c\xE1c ch\u01B0\u1EDBng
+    ng\u1EA1i v\u1EADt tr\u01B0\u1EDBc th\u1EDDi gian quy \u0111\u1ECBnh th\xEC xin
+    ch\xFAc m\u1EEBng b\u1EA1n \u0111\xE3 d\xE0nh chi\u1EBFn th\u1EAFng  "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
