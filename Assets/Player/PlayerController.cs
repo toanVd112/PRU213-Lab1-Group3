@@ -23,6 +23,11 @@ public class PlayerController : MonoBehaviour
     private Animator _anim;
     private SpriteRenderer _sr;
 
+    // ── Knockback State ──
+    // Khi bị đẩy lùi, tạm thời tắt input để velocity không bị ghi đè
+    private bool _isKnockedBack = false;
+    private float _knockbackTimer = 0f;
+
     void Start()
     {
         _rb   = GetComponent<Rigidbody2D>();
@@ -32,6 +37,21 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        // ── Xử lý timer knockback ──
+        // Trong thời gian bị đẩy lùi: đếm ngược timer, KHÔNG nhận input di chuyển
+        // để velocity do TrapController set không bị ghi đè ngay frame sau
+        if (_isKnockedBack)
+        {
+            _knockbackTimer -= Time.deltaTime;
+            if (_knockbackTimer <= 0f)
+                _isKnockedBack = false;
+
+            // Vẫn cập nhật animation và ground check, nhưng KHÔNG ghi đè velocity
+            _isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+            _anim.SetFloat("Speed", 0f);
+            return; // ← Bỏ qua phần xử lý input bên dưới
+        }
+
         float move = 0f;
 
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
@@ -59,5 +79,15 @@ public class PlayerController : MonoBehaviour
             _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, jumpForce);
             _jumpCount++;
         }
+    }
+
+    /// <summary>
+    /// Được gọi từ TrapController khi Player bị knockback.
+    /// Khóa input trong <duration> giây để velocity knockback không bị ghi đè.
+    /// </summary>
+    public void SetKnockbackState(float duration)
+    {
+        _isKnockedBack = true;
+        _knockbackTimer = duration;
     }
 }

@@ -312,9 +312,10 @@ GameObject:
   - component: {fileID: 12979573}
   - component: {fileID: 12979572}
   - component: {fileID: 12979571}
+  - component: {fileID: 12979574}
   m_Layer: 0
   m_Name: Trap1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -439,6 +440,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &12979574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12979570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdd55ce97557ef940b80fac7da8c0c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TrapController
+  knockbackForceX: 8
+  knockbackForceY: 5
+  knockbackDuration: 0.25
+  damageAmount: 1
 --- !u!1 &21467288
 GameObject:
   m_ObjectHideFlags: 0
@@ -5573,6 +5590,10 @@ PrefabInstance:
       propertyPath: pointB
       value: 
       objectReference: {fileID: 458933566}
+    - target: {fileID: 4573254715258689870, guid: 8276f2c0b0718b54f96ad7a44d74c213, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6688246106861994267, guid: 8276f2c0b0718b54f96ad7a44d74c213, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -5633,6 +5654,10 @@ PrefabInstance:
     - target: {fileID: 1920666726618156373, guid: 28d4a811e4c0ed54685e685132cf8d1a, type: 3}
       propertyPath: maxJumps
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920666726618156373, guid: 28d4a811e4c0ed54685e685132cf8d1a, type: 3}
+      propertyPath: jumpForce
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1920666726618156373, guid: 28d4a811e4c0ed54685e685132cf8d1a, type: 3}
       propertyPath: groundCheck
